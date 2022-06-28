@@ -1,0 +1,37 @@
+{
+  "workbench.colorTheme": "LaserWave",
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "git.autofetch": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.linkedEditing": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "[html]": {
+    "editor.defaultFormatter": "mohd-akram.vscode-html-format"
+  },
+  "files.autoSave": "afterDelay",
+  "[css]": {
+    "editor.defaultFormatter": "michelemelluso.code-beautifier"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "workbench.startupEditor": "none",
+  "[json]": {
+    "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "svipas.prettier-plus"
+  },
+  "[scss]": {
+    "editor.suggest.insertMode": "replace",
+    "editor.defaultFormatter": "michelemelluso.code-beautifier"
+  },
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "prettier.stylelintIntegration": true,
+  "compile-hero.sass-output-directory": "../css",
+  "compile-hero.scss-output-directory": "../css",
+  "compile-hero.x-generate-sourcemap-css": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
