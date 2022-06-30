@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* Указываем box sizing */
 *,
 *::before,
@@ -13,11 +12,17 @@ ul,
 ol {
   padding: 0;
   list-style-type: none;
+  display: block;
+}
+
+li {
+  display: block;
 }
 
 /* Убираем подчеркивание текста в ссылках*/
 a {
   text-decoration: none;
+  display: block;
 }
 
 /* Убираем внешние отступы */
@@ -39,13 +44,6 @@ dd {
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 /* Упрощаем работу с изображениями */
 img {
@@ -54,7 +52,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article>*+* {
+article > * + * {
   margin-top: 1em;
 }
 

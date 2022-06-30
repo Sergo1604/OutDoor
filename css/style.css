@@ -1,6 +1,6 @@
 @charset "UTF-8";
-
 /* Указываем box sizing */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&family=Roboto&display=swap");
 *,
 *::before,
 *::after {
@@ -13,11 +13,17 @@ ul,
 ol {
   padding: 0;
   list-style-type: none;
+  display: block;
+}
+
+li {
+  display: block;
 }
 
 /* Убираем подчеркивание текста в ссылках*/
 a {
   text-decoration: none;
+  display: block;
 }
 
 /* Убираем внешние отступы */
@@ -39,13 +45,6 @@ dd {
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
-body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5;
-}
-
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
 /* Упрощаем работу с изображениями */
 img {
@@ -54,7 +53,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article>*+* {
+article > * + * {
   margin-top: 1em;
 }
 
@@ -67,3 +66,301 @@ select {
 }
 
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+.wrapperRaws {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapperRawsColumns {
+  display: flex;
+  justify-content: center;
+  align-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.gridder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+body {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #575445;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav {
+  padding: 10px 16px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+}
+.nav .menu-nav {
+  width: 440px;
+  margin-left: 230px;
+}
+.nav .menu-nav .link {
+  color: #575445;
+}
+.nav .buy-nav {
+  width: 290px;
+}
+.nav .buy-nav .link {
+  color: #fff;
+}
+.nav .buy-nav .btn {
+  padding: 12px 16px;
+  border-radius: 6px;
+  background-color: #575445;
+}
+.nav .buy-nav .span {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.hero {
+  background: url(../img/header/hero/IMAGE.png);
+  padding: 210px 0px;
+}
+.hero .block {
+  padding-left: 16px;
+  width: 730px;
+  margin: auto 0;
+}
+.hero .block .h3 {
+  font-family: "Poppins", sans-serif;
+  color: #e6b939;
+  font-size: 14px;
+  line-height: 0.93;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+.hero .block .h1 {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 48px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+.hero .block .p {
+  width: 606px;
+  font-family: "Poppins";
+  color: #CACCD1;
+  font-size: 17px;
+  line-height: 1.48;
+  font-weight: 400;
+}
+
+.about {
+  background: url(../img/main/about/circles.png) no-repeat center top, url(../img/main/about/circles.png) no-repeat bottom left;
+}
+.about .container {
+  padding: 100px 0px;
+}
+.about .container .wrapperRaws .img-people {
+  z-index: -1;
+}
+.about .container .wrapperRaws .block {
+  width: 400px;
+}
+.about .container .wrapperRaws .block .h3 {
+  color: #e6b939;
+  font-size: 14px;
+  line-height: 1.42;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+.about .container .wrapperRaws .block .h2 {
+  color: inherit;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.about .container .wrapperRaws .block .p {
+  color: inherit;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin: 25px 0px;
+}
+.about .container .wrapperRaws .block .wrapper-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.about .container .wrapperRaws .block .link {
+  color: inherit;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.bar-products {
+  background: url(../img/main/bar-products/Combined-Shape-1.png) no-repeat bottom left, url(../img/main/bar-products/Combined-Shape.png) no-repeat top right, rgba(87, 84, 69, 0.09);
+}
+.bar-products .container {
+  padding-top: 100px;
+  padding-bottom: 170px;
+}
+.bar-products .container .block-head {
+  text-align: center;
+  width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.bar-products .container .block-head .h3 {
+  color: #e6b939;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.bar-products .container .block-head .h2 {
+  color: #575445;
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.bar-products .container .block-head .p {
+  color: #575445;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.bar-products .container .gridder {
+  grid-gap: 100px;
+}
+.bar-products .container .gridder .block {
+  text-align: center;
+}
+.bar-products .container .gridder .block .block-img {
+  display: inline-block;
+  padding: 20px;
+  background-color: #575445;
+  border-radius: 50%;
+}
+.bar-products .container .gridder .block .h3 {
+  color: inherit;
+  font-size: 20px;
+  line-height: 2;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.bar-products .container .gridder .block .p {
+  color: inherit;
+  font-size: 14px;
+  line-height: 1.45;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.item1 {
+  background-image: url(../img/main/store/IMAGE1.png);
+}
+
+.item2 {
+  background-image: url(../img/main/store/IMAGE2.png);
+}
+
+.item3 {
+  background-image: url(../img/main/store/IMAGE3.png);
+}
+
+.item4 {
+  background-image: url(../img/main/store/IMAGE4.png);
+}
+
+.item5 {
+  background-image: url(../img/main/store/IMAGE5.png);
+}
+
+.item6 {
+  background-image: url(../img/main/store/IMAGE6.png);
+}
+
+.store {
+  padding-top: 100px;
+  padding-bottom: 170px;
+}
+.store .container .block-head {
+  text-align: center;
+  width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.store .container .block-head .h3 {
+  color: #e6b939;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+}
+.store .container .block-head .h2 {
+  color: #575445;
+  font-size: 36px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.store .container .block-head .p {
+  color: #575445;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.store .container .gridder {
+  grid-gap: 30px;
+}
+.store .container .gridder .block {
+  text-align: center;
+}
+.store .container .gridder .block .h3 {
+  color: inherit;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.store .container .gridder .block .p {
+  color: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.store .container .gridder .block .link {
+  color: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.store .container .gridder .block .wrapper-left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
