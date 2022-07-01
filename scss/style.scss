@@ -363,10 +363,12 @@
         
         .stains-bkgr {
             background: #375C58 url(../img/main/shops/Combined-Shape.png);
+            padding: 100px 0;
             .block {
-                width: fit-content;
+                width: 540px;
                 margin-left: auto;
                 margin-right: auto;
+                text-align: center;
                 .h3 {
                     @include setFont(#FAFAFC,
                     14px,
@@ -375,6 +377,32 @@
                     font-family: 'Poppins', sans-serif;
                     text-transform: uppercase;
                     letter-spacing: 2px;
+                }
+                .h2 {
+                    @include setFont($hColor,
+                    36px,
+                    1.2,
+                    400);
+                    font-family: 'Roboto', sans-serif;
+                    margin: 20px 0px;
+                }
+                .p {
+                    @include setFont(#FAFAFC,
+                    16px,
+                    1.2,
+                    400);
+                    font-family: 'Poppins', sans-serif;
+                }
+                .btn {
+                    @include setFont($mainColor,
+                    15px,
+                    1.5,
+                    400);
+                    font-family: 'Poppins', sans-serif;
+                    padding: 10px 20px;
+                    border-radius: 5px;
+                    border: none;
+                    margin-top: 20px;
                 }
             }
         }

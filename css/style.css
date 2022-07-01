@@ -408,11 +408,13 @@ body {
 
 .stains-bkgr {
   background: #375C58 url(../img/main/shops/Combined-Shape.png);
+  padding: 100px 0;
 }
 .stains-bkgr .block {
-  width: fit-content;
+  width: 540px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 .stains-bkgr .block .h3 {
   color: #FAFAFC;
@@ -422,4 +424,30 @@ body {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+.stains-bkgr .block .h2 {
+  color: #e6b939;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin: 20px 0px;
+}
+.stains-bkgr .block .p {
+  color: #FAFAFC;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.stains-bkgr .block .btn {
+  color: #575445;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
 }
