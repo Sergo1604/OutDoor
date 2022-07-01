@@ -338,6 +338,14 @@ body {
 .store .container .gridder .block {
   text-align: center;
 }
+.store .container .gridder .block .wrapper-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.store .container .gridder .block .wrapper-left .link-img {
+  margin-left: 10px;
+}
 .store .container .gridder .block .h3 {
   color: inherit;
   font-size: 28px;
@@ -359,8 +367,11 @@ body {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
-.store .container .gridder .block .wrapper-left {
+.store .container .wrapper-left {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+}
+.store .container .wrapper-left .link-img {
+  margin-left: 10px;
 }

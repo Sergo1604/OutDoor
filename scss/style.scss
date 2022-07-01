@@ -288,6 +288,14 @@
                     grid-gap: 30px;
                     .block {
                         text-align: center;
+                        .wrapper-left {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            .link-img {
+                                margin-left: 10px;
+                            }
+                        }
                         .h3 {
                             @include setFont(inherit,
                             28px,
@@ -309,11 +317,14 @@
                             400);
                             font-family: 'Poppins', sans-serif;
                         }
-                        .wrapper-left {
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-start;
-                        }
+                    }
+                }
+                .wrapper-left {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    .link-img {
+                        margin-left: 10px;
                     }
                 }
             }
