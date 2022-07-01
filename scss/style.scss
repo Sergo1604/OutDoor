@@ -260,7 +260,6 @@
                     width: 520px;
                     margin-left: auto;
                     margin-right: auto;
-                    margin-bottom: 50px;
                     .h3 {
                         @include setFont($hColor,
                         14px,
@@ -286,8 +285,12 @@
                 }
                 .gridder {
                     grid-gap: 30px;
+                    margin: 25px 0px;
                     .block {
                         text-align: center;
+                        padding-top: 40px;
+                        padding-bottom: 350px;
+                        border-radius: 10px;
                         .wrapper-left {
                             display: flex;
                             align-items: center;
@@ -310,22 +313,68 @@
                             400);
                             font-family: 'Poppins', sans-serif;
                         }
-                        .link {
-                            @include setFont(inherit,
-                            15px,
-                            1.5,
-                            400);
-                            font-family: 'Poppins', sans-serif;
-                        }
                     }
+                }
+                .link {
+                    @include setFont(inherit,
+                    15px,
+                    1.5,
+                    400);
+                    font-family: 'Poppins', sans-serif;
                 }
                 .wrapper-left {
                     display: flex;
                     align-items: center;
-                    justify-content: flex-start;
+                    justify-content: center;
                     .link-img {
                         margin-left: 10px;
                     }
+                }
+            }
+        }
+        
+        .sea-bkgr {
+            background: url(../img/main/shops/IMAGEsea.png);
+            padding: 510px 35px 35px 750px;
+            .wrapperRaws {
+                background: #292C32;
+                border-radius: 16px;
+                width: 615px;
+                justify-content: space-evenly;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                .link {
+                    font-family: 'Poppins', sans-serif;
+                    @include setFont($secColor,
+                    12px,
+                    1.67,
+                    400);
+                }
+                .wrapper-left {
+                    display: flex;
+                    align-items: center;
+                    .link-img {
+                        margin-right: 10px;
+                    }
+                }
+                ;
+            }
+        }
+        
+        .stains-bkgr {
+            background: #375C58 url(../img/main/shops/Combined-Shape.png);
+            .block {
+                width: fit-content;
+                margin-left: auto;
+                margin-right: auto;
+                .h3 {
+                    @include setFont(#FAFAFC,
+                    14px,
+                    1.43,
+                    400);
+                    font-family: 'Poppins', sans-serif;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
                 }
             }
         }

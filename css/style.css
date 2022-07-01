@@ -308,7 +308,6 @@ body {
   width: 520px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 50px;
 }
 .store .container .block-head .h3 {
   color: #e6b939;
@@ -334,9 +333,13 @@ body {
 }
 .store .container .gridder {
   grid-gap: 30px;
+  margin: 25px 0px;
 }
 .store .container .gridder .block {
   text-align: center;
+  padding-top: 40px;
+  padding-bottom: 350px;
+  border-radius: 10px;
 }
 .store .container .gridder .block .wrapper-left {
   display: flex;
@@ -360,7 +363,7 @@ body {
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
-.store .container .gridder .block .link {
+.store .container .link {
   color: inherit;
   font-size: 15px;
   line-height: 1.5;
@@ -370,8 +373,53 @@ body {
 .store .container .wrapper-left {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 }
 .store .container .wrapper-left .link-img {
   margin-left: 10px;
+}
+
+.sea-bkgr {
+  background: url(../img/main/shops/IMAGEsea.png);
+  padding: 510px 35px 35px 750px;
+}
+.sea-bkgr .wrapperRaws {
+  background: #292C32;
+  border-radius: 16px;
+  width: 615px;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.sea-bkgr .wrapperRaws .link {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.67;
+  font-weight: 400;
+}
+.sea-bkgr .wrapperRaws .wrapper-left {
+  display: flex;
+  align-items: center;
+}
+.sea-bkgr .wrapperRaws .wrapper-left .link-img {
+  margin-right: 10px;
+}
+
+.stains-bkgr {
+  background: #375C58 url(../img/main/shops/Combined-Shape.png);
+}
+.stains-bkgr .block {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.stains-bkgr .block .h3 {
+  color: #FAFAFC;
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
