@@ -574,3 +574,28 @@
             }
         }
     }
+    
+    .footer {
+        background-color: $mainColor;
+        .link-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container {
+            .block {
+                .h3 {
+                    @include setFont($hColor,
+                    14px,
+                    1.2,
+                    400);
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        .wrapperRaws {
+            align-items: flex-start;
+            justify-items: space-between;
+        }
+    }
