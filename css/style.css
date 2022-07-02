@@ -72,7 +72,7 @@ select {
   align-items: center;
 }
 
-.wrapperRawsColumns {
+.wrapperColumns {
   display: flex;
   justify-content: center;
   align-content: space-between;
@@ -450,4 +450,167 @@ body {
   border-radius: 5px;
   border: none;
   margin-top: 20px;
+}
+
+.accessories .container {
+  padding-top: 100px;
+}
+.accessories .container .block {
+  width: 540px;
+  margin-bottom: 20px;
+}
+.accessories .container .block .h3 {
+  color: #e6b939;
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.accessories .container .block .h2 {
+  color: inherit;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin: 20px 0px;
+  margin: 10px 0px;
+}
+.accessories .container .block .p {
+  color: inherit;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.accessories .container .wrapperRaws {
+  align-items: flex-start;
+}
+.accessories .container .wrapperRaws .block {
+  font-family: "Poppins", sans-serif;
+}
+.accessories .container .wrapperRaws .block .p {
+  width: 430px;
+  margin: 20px 0px;
+  color: inherit;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.accessories .container .wrapperRaws .block .wrapperRaws {
+  justify-content: space-between;
+  align-items: center;
+}
+.accessories .container .wrapperRaws .block .wrapperRaws .p {
+  width: max-content;
+  color: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+.accessories .container .wrapperRaws .block .wrapperRaws .wrapperRaws {
+  align-items: center;
+  width: max-content;
+}
+.accessories .container .wrapperRaws .block .wrapperRaws .wrapperRaws .p {
+  width: max-content;
+  margin-left: 15px;
+  color: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+.accessories .container .wrapperRaws .block .wrapperRaws .wrapperRaws .p .span {
+  color: #e6b939;
+  font-size: 11px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.accessories .container .link-wrapperRaws {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.accessories .container .link-wrapperRaws .link-img {
+  margin-left: 10px;
+}
+
+.magazines {
+  background: url(../img/main/accessories/Decoration-Pattern-1-Dark.png) no-repeat bottom left;
+  padding-bottom: 100px;
+}
+.magazines .ptrn {
+  display: block;
+  position: relative;
+  left: 40%;
+  top: 120px;
+  z-index: -2;
+}
+.magazines .container .ptrn {
+  display: block;
+  position: relative;
+  left: 37%;
+  top: 120px;
+  z-index: -2;
+}
+.magazines .container .wrapperRaws {
+  align-items: center;
+  justify-content: space-between;
+}
+.magazines .container .wrapperRaws .img {
+  z-index: -1;
+}
+.magazines .container .wrapperRaws .block {
+  width: 380px;
+}
+.magazines .container .wrapperRaws .block .h3 {
+  color: #e6b939;
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.magazines .container .wrapperRaws .block .h2 {
+  color: inherit;
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  margin: 20px 0px;
+  margin: 10px 0px;
+}
+.magazines .container .wrapperRaws .block .p {
+  color: inherit;
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.magazines .container .wrapperRaws .block .link-wrapperRaws {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: max-content;
+  margin-top: 20px;
+  color: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.magazines .container .wrapperRaws .block .link-wrapperRaws .link-img {
+  margin-left: 10px;
 }

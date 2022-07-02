@@ -1,376 +1,420 @@
-        @import 'reset.scss';
-        //подключили шрифты
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&family=Roboto&display=swap');
-        //Обозначили переменные для цветовой палитры
-        $mainColor: #575445;
-        $secColor: #fff;
-        $hColor: #e6b939;
-        $catColor: #222222;
-        //ширина bodу
-        $widthBody: 1440px;
-        $widthContainer: 1200px;
-        @mixin flexRaws() {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+    @import 'reset.scss';
+    //подключили шрифты
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins&family=Roboto&display=swap');
+    //Обозначили переменные для цветовой палитры
+    $mainColor: #575445;
+    $secColor: #fff;
+    $hColor: #e6b939;
+    $catColor: #222222;
+    //ширина bodу
+    $widthBody: 1440px;
+    $widthContainer: 1200px;
+    @mixin flexRaws() {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    @mixin flexColumns() {
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    @mixin setFont($col,
+    $fz,
+    $lh,
+    $fw) {
+        color: $col;
+        font-size: $fz;
+        line-height: $lh;
+        font-weight: $fw;
+    }
+    
+    @mixin setGrid () {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .wrapperRaws {
+        @include flexRaws();
+    }
+    
+    .wrapperColumns {
+        @include flexColumns();
+    }
+    
+    .gridder {
+        @include setGrid();
+    }
+    
+    body {
+        max-width: $widthBody;
+        margin-left: auto;
+        margin-right: auto;
+        color: $mainColor;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    .container {
+        width: $widthContainer;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .nav {
+        padding: 10px 16px;
+        font-family: 'Poppins', sans-serif;
+        font-size: 16px;
+        background-color: $secColor;
+        .menu-nav {
+            width: 440px;
+            margin-left: 230px;
+            .link {
+                color: $mainColor;
+            }
         }
-        
-        @mixin flexColumns() {
-            display: flex;
-            justify-content: center;
-            align-content: space-between;
-            align-items: center;
-            flex-direction: column;
+        .buy-nav {
+            width: 290px;
+            .link {
+                color: $secColor;
+            }
+            .btn {
+                padding: 12px 16px;
+                border-radius: 6px;
+                background-color: $mainColor;
+            }
+            .span {
+                margin-left: 8px;
+                margin-right: 8px;
+            }
         }
-        
-        @mixin setFont($col,
-        $fz,
-        $lh,
-        $fw) {
-            color: $col;
-            font-size: $fz;
-            line-height: $lh;
-            font-weight: $fw;
+    }
+    
+    .hero {
+        background: url(../img/header/hero/IMAGE.png);
+        padding: 210px 0px;
+        .block {
+            padding-left: 16px;
+            width: 730px;
+            margin: auto 0;
+            .h3 {
+                font-family: "Poppins", sans-serif;
+                @include setFont($hColor,
+                14px,
+                0.93,
+                400);
+                letter-spacing: 2px;
+            }
+            .h1 {
+                font-family: "Roboto", sans-serif;
+                @include setFont($secColor,
+                48px,
+                1.4,
+                400);
+                margin-bottom: 80px;
+            }
+            .p {
+                width: 606px;
+                font-family: "Poppins";
+                @include setFont(#CACCD1,
+                17px,
+                1.48,
+                400);
+            }
         }
-        
-        @mixin setGrid () {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-        }
-        
-        .wrapperRaws {
-            @include flexRaws();
-        }
-        
-        .wrapperRawsColumns {
-            @include flexColumns();
-        }
-        
-        .gridder {
-            @include setGrid();
-        }
-        
-        body {
-            max-width: $widthBody;
-            margin-left: auto;
-            margin-right: auto;
-            color: $mainColor;
-            font-family: 'Lato', sans-serif;
-        }
-        
+    }
+    
+    .about {
+        background: url(../img/main/about/circles.png) no-repeat center top, url(../img/main/about/circles.png) no-repeat bottom left;
         .container {
-            width: $widthContainer;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .nav {
-            padding: 10px 16px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 16px;
-            background-color: $secColor;
-            .menu-nav {
-                width: 440px;
-                margin-left: 230px;
-                .link {
-                    color: $mainColor;
+            padding: 100px 0px;
+            .wrapperRaws {
+                .img-people {
+                    z-index: -1;
                 }
-            }
-            .buy-nav {
-                width: 290px;
-                .link {
-                    color: $secColor;
-                }
-                .btn {
-                    padding: 12px 16px;
-                    border-radius: 6px;
-                    background-color: $mainColor;
-                }
-                .span {
-                    margin-left: 8px;
-                    margin-right: 8px;
-                }
-            }
-        }
-        
-        .hero {
-            background: url(../img/header/hero/IMAGE.png);
-            padding: 210px 0px;
-            .block {
-                padding-left: 16px;
-                width: 730px;
-                margin: auto 0;
-                .h3 {
-                    font-family: "Poppins", sans-serif;
-                    @include setFont($hColor,
-                    14px,
-                    0.93,
-                    400);
-                    letter-spacing: 2px;
-                }
-                .h1 {
-                    font-family: "Roboto", sans-serif;
-                    @include setFont($secColor,
-                    48px,
-                    1.4,
-                    400);
-                    margin-bottom: 80px;
-                }
-                .p {
-                    width: 606px;
-                    font-family: "Poppins";
-                    @include setFont(#CACCD1,
-                    17px,
-                    1.48,
-                    400);
-                }
-            }
-        }
-        
-        .about {
-            background: url(../img/main/about/circles.png) no-repeat center top, url(../img/main/about/circles.png) no-repeat bottom left;
-            .container {
-                padding: 100px 0px;
-                .wrapperRaws {
-                    .img-people {
-                        z-index: -1;
-                    }
-                    .block {
-                        width: 400px;
-                        .h3 {
-                            @include setFont($hColor,
-                            14px,
-                            1.42,
-                            400);
-                            letter-spacing: 2px;
-                            text-transform: uppercase;
-                            font-family: 'Poppins', sans-serif;
-                        }
-                        .h2 {
-                            @include setFont(inherit,
-                            36px,
-                            1.2,
-                            400);
-                            font-family: 'Roboto', sans-serif;
-                        }
-                        .p {
-                            @include setFont(inherit,
-                            16px,
-                            1.2,
-                            400);
-                            font-family: 'Poppins', sans-serif;
-                            margin: 25px 0px;
-                        }
-                        .wrapper-left {
-                            display: flex;
-                            align-items: center;
-                            justify-content: flex-start;
-                        }
-                        .link {
-                            @include setFont(inherit,
-                            15px,
-                            1.4,
-                            400);
-                            font-family: 'Poppins', sans-serif;
-                        }
-                    }
-                }
-            }
-        }
-        
-        .bar-products {
-            background: url(../img/main/bar-products/Combined-Shape-1.png) no-repeat bottom left, url(../img/main/bar-products/Combined-Shape.png) no-repeat top right, rgba(87, 84, 69, 0.09);
-            .container {
-                padding-top: 100px;
-                padding-bottom: 170px;
-                .block-head {
-                    text-align: center;
-                    width: 520px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-bottom: 50px;
+                .block {
+                    width: 400px;
                     .h3 {
                         @include setFont($hColor,
                         14px,
-                        1.2,
+                        1.42,
                         400);
                         letter-spacing: 2px;
-                        font-family: 'Poppins', sans-serif;
                         text-transform: uppercase;
+                        font-family: 'Poppins', sans-serif;
                     }
                     .h2 {
-                        @include setFont($mainColor,
+                        @include setFont(inherit,
                         36px,
-                        1.5,
+                        1.2,
                         400);
                         font-family: 'Roboto', sans-serif;
                     }
                     .p {
-                        @include setFont($mainColor,
+                        @include setFont(inherit,
                         16px,
                         1.2,
                         400);
+                        font-family: 'Poppins', sans-serif;
+                        margin: 25px 0px;
                     }
-                }
-                .gridder {
-                    grid-gap: 100px;
-                    .block {
-                        text-align: center;
-                        .block-img {
-                            display: inline-block;
-                            padding: 20px;
-                            background-color: $mainColor;
-                            border-radius: 50%;
-                        }
-                        .h3 {
-                            @include setFont(inherit,
-                            20px,
-                            2,
-                            400);
-                            font-family: 'Roboto', sans-serif;
-                        }
-                        .p {
-                            @include setFont(inherit,
-                            14px,
-                            1.45,
-                            400);
-                            font-family: 'Poppins', sans-serif;
-                            text-align: center;
-                        }
+                    .wrapper-left {
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-start;
+                    }
+                    .link {
+                        @include setFont(inherit,
+                        15px,
+                        1.4,
+                        400);
+                        font-family: 'Poppins', sans-serif;
                     }
                 }
             }
         }
-        
-        @mixin setBcgrColor() {
-            @for $i from 1 through 6 {
-                .item#{$i} {
-                    background-image: url(../img/main/store/IMAGE#{$i}.png);
-                }
-            }
-        }
-        
-        @include setBcgrColor();
-        .store {
+    }
+    
+    .bar-products {
+        background: url(../img/main/bar-products/Combined-Shape-1.png) no-repeat bottom left, url(../img/main/bar-products/Combined-Shape.png) no-repeat top right, rgba(87, 84, 69, 0.09);
+        .container {
             padding-top: 100px;
             padding-bottom: 170px;
-            .container {
-                .block-head {
+            .block-head {
+                text-align: center;
+                width: 520px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 50px;
+                .h3 {
+                    @include setFont($hColor,
+                    14px,
+                    1.2,
+                    400);
+                    letter-spacing: 2px;
+                    font-family: 'Poppins', sans-serif;
+                    text-transform: uppercase;
+                }
+                .h2 {
+                    @include setFont($mainColor,
+                    36px,
+                    1.5,
+                    400);
+                    font-family: 'Roboto', sans-serif;
+                }
+                .p {
+                    @include setFont($mainColor,
+                    16px,
+                    1.2,
+                    400);
+                }
+            }
+            .gridder {
+                grid-gap: 100px;
+                .block {
                     text-align: center;
-                    width: 520px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    .h3 {
-                        @include setFont($hColor,
-                        14px,
-                        1.2,
-                        400);
-                        letter-spacing: 2px;
-                        font-family: 'Poppins', sans-serif;
-                        text-transform: uppercase;
+                    .block-img {
+                        display: inline-block;
+                        padding: 20px;
+                        background-color: $mainColor;
+                        border-radius: 50%;
                     }
-                    .h2 {
-                        @include setFont($mainColor,
-                        36px,
-                        1.5,
+                    .h3 {
+                        @include setFont(inherit,
+                        20px,
+                        2,
                         400);
                         font-family: 'Roboto', sans-serif;
                     }
                     .p {
-                        @include setFont($mainColor,
-                        16px,
-                        1.2,
+                        @include setFont(inherit,
+                        14px,
+                        1.45,
                         400);
-                    }
-                }
-                .gridder {
-                    grid-gap: 30px;
-                    margin: 25px 0px;
-                    .block {
+                        font-family: 'Poppins', sans-serif;
                         text-align: center;
-                        padding-top: 40px;
-                        padding-bottom: 350px;
-                        border-radius: 10px;
-                        .wrapper-left {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            .link-img {
-                                margin-left: 10px;
-                            }
-                        }
-                        .h3 {
-                            @include setFont(inherit,
-                            28px,
-                            1.2,
-                            400);
-                            font-family: 'Roboto', sans-serif;
-                        }
-                        .p {
-                            @include setFont(inherit,
-                            15px,
-                            1.5,
-                            400);
-                            font-family: 'Poppins', sans-serif;
-                        }
-                    }
-                }
-                .link {
-                    @include setFont(inherit,
-                    15px,
-                    1.5,
-                    400);
-                    font-family: 'Poppins', sans-serif;
-                }
-                .wrapper-left {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    .link-img {
-                        margin-left: 10px;
                     }
                 }
             }
         }
-        
-        .sea-bkgr {
-            background: url(../img/main/shops/IMAGEsea.png);
-            padding: 510px 35px 35px 750px;
-            .wrapperRaws {
-                background: #292C32;
-                border-radius: 16px;
-                width: 615px;
-                justify-content: space-evenly;
-                padding-top: 15px;
-                padding-bottom: 15px;
-                .link {
-                    font-family: 'Poppins', sans-serif;
-                    @include setFont($secColor,
-                    12px,
-                    1.67,
-                    400);
-                }
-                .wrapper-left {
-                    display: flex;
-                    align-items: center;
-                    .link-img {
-                        margin-right: 10px;
-                    }
-                }
-                ;
+    }
+    
+    @mixin setBcgrColor() {
+        @for $i from 1 through 6 {
+            .item#{$i} {
+                background-image: url(../img/main/store/IMAGE#{$i}.png);
             }
         }
-        
-        .stains-bkgr {
-            background: #375C58 url(../img/main/shops/Combined-Shape.png);
-            padding: 100px 0;
-            .block {
-                width: 540px;
+    }
+    
+    @include setBcgrColor();
+    .store {
+        padding-top: 100px;
+        padding-bottom: 170px;
+        .container {
+            .block-head {
+                text-align: center;
+                width: 520px;
                 margin-left: auto;
                 margin-right: auto;
-                text-align: center;
                 .h3 {
-                    @include setFont(#FAFAFC,
+                    @include setFont($hColor,
+                    14px,
+                    1.2,
+                    400);
+                    letter-spacing: 2px;
+                    font-family: 'Poppins', sans-serif;
+                    text-transform: uppercase;
+                }
+                .h2 {
+                    @include setFont($mainColor,
+                    36px,
+                    1.5,
+                    400);
+                    font-family: 'Roboto', sans-serif;
+                }
+                .p {
+                    @include setFont($mainColor,
+                    16px,
+                    1.2,
+                    400);
+                }
+            }
+            .gridder {
+                grid-gap: 30px;
+                margin: 25px 0px;
+                .block {
+                    text-align: center;
+                    padding-top: 40px;
+                    padding-bottom: 350px;
+                    border-radius: 10px;
+                    .wrapper-left {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        .link-img {
+                            margin-left: 10px;
+                        }
+                    }
+                    .h3 {
+                        @include setFont(inherit,
+                        28px,
+                        1.2,
+                        400);
+                        font-family: 'Roboto', sans-serif;
+                    }
+                    .p {
+                        @include setFont(inherit,
+                        15px,
+                        1.5,
+                        400);
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+            }
+            .link {
+                @include setFont(inherit,
+                15px,
+                1.5,
+                400);
+                font-family: 'Poppins', sans-serif;
+            }
+            .wrapper-left {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .link-img {
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    
+    .sea-bkgr {
+        background: url(../img/main/shops/IMAGEsea.png);
+        padding: 510px 35px 35px 750px;
+        .wrapperRaws {
+            background: #292C32;
+            border-radius: 16px;
+            width: 615px;
+            justify-content: space-evenly;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            .link {
+                font-family: 'Poppins', sans-serif;
+                @include setFont($secColor,
+                12px,
+                1.67,
+                400);
+            }
+            .wrapper-left {
+                display: flex;
+                align-items: center;
+                .link-img {
+                    margin-right: 10px;
+                }
+            }
+            ;
+        }
+    }
+    
+    .stains-bkgr {
+        background: #375C58 url(../img/main/shops/Combined-Shape.png);
+        padding: 100px 0;
+        .block {
+            width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            .h3 {
+                @include setFont(#FAFAFC,
+                14px,
+                1.43,
+                400);
+                font-family: 'Poppins', sans-serif;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+            }
+            .h2 {
+                @include setFont($hColor,
+                36px,
+                1.2,
+                400);
+                font-family: 'Roboto', sans-serif;
+                margin: 20px 0px;
+            }
+            .p {
+                @include setFont(#FAFAFC,
+                16px,
+                1.2,
+                400);
+                font-family: 'Poppins', sans-serif;
+            }
+            .btn {
+                @include setFont($mainColor,
+                15px,
+                1.5,
+                400);
+                font-family: 'Poppins', sans-serif;
+                padding: 10px 20px;
+                border-radius: 5px;
+                border: none;
+                margin-top: 20px;
+            }
+        }
+    }
+    
+    .accessories {
+        .container {
+            padding-top: 100px;
+            .block {
+                width: 540px;
+                margin-bottom: 20px;
+                .h3 {
+                    @include setFont($hColor,
                     14px,
                     1.43,
                     400);
@@ -379,30 +423,154 @@
                     letter-spacing: 2px;
                 }
                 .h2 {
-                    @include setFont($hColor,
+                    @include setFont(inherit,
                     36px,
                     1.2,
                     400);
                     font-family: 'Roboto', sans-serif;
                     margin: 20px 0px;
+                    margin: 10px 0px;
                 }
                 .p {
-                    @include setFont(#FAFAFC,
+                    @include setFont(inherit,
                     16px,
                     1.2,
                     400);
                     font-family: 'Poppins', sans-serif;
                 }
-                .btn {
-                    @include setFont($mainColor,
-                    15px,
-                    1.5,
-                    400);
-                    font-family: 'Poppins', sans-serif;
-                    padding: 10px 20px;
-                    border-radius: 5px;
-                    border: none;
-                    margin-top: 20px;
+            }
+            .wrapperRaws {
+                align-items: flex-start;
+                .block {
+                    .p {
+                        width: 430px;
+                        margin: 20px 0px;
+                        @include setFont(inherit,
+                        20px,
+                        1.2,
+                        400)
+                    }
+                    font-family: 'Poppins',
+                    sans-serif;
+                    .wrapperRaws {
+                        justify-content: space-between;
+                        align-items: center;
+                        .p {
+                            width: max-content;
+                            @include setFont(inherit,
+                            13px,
+                            1.2,
+                            400);
+                        }
+                        .wrapperRaws {
+                            align-items: center;
+                            width: max-content;
+                            .p {
+                                width: max-content;
+                                margin-left: 15px;
+                                @include setFont(inherit,
+                                13px,
+                                1.2,
+                                400);
+                                font-family: 'Roboto', sans-serif;
+                                .span {
+                                    @include setFont($hColor,
+                                    11px,
+                                    1.2,
+                                    400);
+                                    font-family: 'Poppins', sans-serif;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .link-wrapperRaws {
+                @include flexRaws();
+                width: max-content;
+                margin-left: auto;
+                margin-right: auto;
+                .link-img {
+                    margin-left: 10px;
+                }
+                ;
+                @include setFont(inherit,
+                15px,
+                1.5,
+                400);
+                font-family: 'Poppins',
+                sans-serif;
+            }
+        }
+    }
+    
+    .magazines {
+        background: url(../img/main/accessories/Decoration-Pattern-1-Dark.png) no-repeat bottom left;
+        padding-bottom: 100px;
+        .ptrn {
+            display: block;
+            position: relative;
+            left: 40%;
+            top: 120px;
+            z-index: -2;
+        }
+        .container {
+            .ptrn {
+                display: block;
+                position: relative;
+                left: 37%;
+                top: 120px;
+                z-index: -2;
+            }
+            .wrapperRaws {
+                align-items: center;
+                justify-content: space-between;
+                .img {
+                    z-index: -1;
+                }
+                .block {
+                    width: 380px;
+                    .h3 {
+                        @include setFont($hColor,
+                        14px,
+                        1.43,
+                        400);
+                        font-family: 'Poppins', sans-serif;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                    .h2 {
+                        @include setFont(inherit,
+                        36px,
+                        1.2,
+                        400);
+                        font-family: 'Roboto', sans-serif;
+                        margin: 20px 0px;
+                        margin: 10px 0px;
+                    }
+                    .p {
+                        @include setFont(inherit,
+                        16px,
+                        1.2,
+                        400);
+                        font-family: 'Poppins', sans-serif;
+                    }
+                    .link-wrapperRaws {
+                        @include flexRaws();
+                        width: max-content;
+                        margin-top: 20px;
+                        .link-img {
+                            margin-left: 10px;
+                        }
+                        ;
+                        @include setFont(inherit,
+                        15px,
+                        1.5,
+                        400);
+                        font-family: 'Poppins',
+                        sans-serif;
+                    }
                 }
             }
         }
+    }
