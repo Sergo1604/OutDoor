@@ -624,13 +624,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.footer .container .wrapper-left {
+.footer .container .wrapperRaws {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   margin-top: 60px;
 }
-.footer .container .wrapper-left .block .h3 {
+.footer .container .wrapperRaws .block .h3 {
   color: #e6b939;
   font-size: 14px;
   line-height: 2;
@@ -638,29 +638,50 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.footer .container .wrapper-left .block .p,
-.footer .container .wrapper-left .block .link {
+.footer .container .wrapperRaws .block .p,
+.footer .container .wrapperRaws .block .link {
   color: #fff;
   font-size: 14px;
   line-height: 2;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
-.footer .container .wrapper-left .letter .p {
+.footer .container .wrapperRaws .letter .p {
   width: 430px;
 }
-.footer .container .wrapperRaws {
+.footer .container .wrapperRaws .letter .form {
+  position: relative;
+}
+.footer .container .wrapperRaws .letter .input {
+  width: 460px;
+  border-radius: 8px;
+  border: none;
+  display: block;
+  padding: 18px 0px 9px;
+}
+.footer .container .wrapperRaws .letter .btn {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  color: #fff;
+  background-color: #575445;
+}
+.footer .container .wrapper-left {
   padding-top: 30px;
+  display: flex;
   align-items: flex-end;
   justify-content: space-between;
 }
-.footer .container .wrapperRaws .p {
+.footer .container .wrapper-left .p {
   color: #fff;
   font-size: 14px;
   line-height: 2;
   font-weight: 400;
   font-family: "Poppins", sans-serif;
 }
-.footer .container .wrapperRaws .icons {
+.footer .container .wrapper-left .icons {
   width: 160px;
 }
