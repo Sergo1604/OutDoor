@@ -577,25 +577,56 @@
     
     .footer {
         background-color: $mainColor;
-        .link-img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
+        padding: 100px 0;
         .container {
-            .block {
-                .h3 {
-                    @include setFont($hColor,
-                    14px,
-                    1.2,
-                    400);
-                    text-transform: uppercase;
-                    letter-spacing: 2px;
+            .link-img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .wrapper-left {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+                margin-top: 60px;
+                .block {
+                    .h3 {
+                        @include setFont($hColor,
+                        14px,
+                        2,
+                        400);
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                    }
+                    .p,
+                    .link {
+                        @include setFont($secColor,
+                        14px,
+                        2,
+                        400);
+                        font-family: 'Poppins', sans-serif;
+                    }
+                }
+                .letter {
+                    .p {
+                        width: 430px;
+                    }
                 }
             }
-        }
-        .wrapperRaws {
-            align-items: flex-start;
-            justify-items: space-between;
+            .wrapperRaws {
+                padding-top: 30px;
+                align-items: flex-end;
+                justify-content: space-between;
+                .p {
+                    @include setFont($secColor,
+                    14px,
+                    2,
+                    400);
+                    font-family: 'Poppins', sans-serif;
+                }
+                .icons {
+                    width: 160px;
+                }
+            }
         }
     }

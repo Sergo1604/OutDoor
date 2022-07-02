@@ -617,21 +617,50 @@ body {
 
 .footer {
   background-color: #575445;
+  padding: 100px 0;
 }
-.footer .link-img {
+.footer .container .link-img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-.footer .container .block .h3 {
+.footer .container .wrapper-left {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.footer .container .wrapper-left .block .h3 {
   color: #e6b939;
   font-size: 14px;
-  line-height: 1.2;
+  line-height: 2;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
-.footer .wrapperRaws {
-  align-items: flex-start;
-  justify-items: space-between;
+.footer .container .wrapper-left .block .p,
+.footer .container .wrapper-left .block .link {
+  color: #fff;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.footer .container .wrapper-left .letter .p {
+  width: 430px;
+}
+.footer .container .wrapperRaws {
+  padding-top: 30px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.footer .container .wrapperRaws .p {
+  color: #fff;
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.footer .container .wrapperRaws .icons {
+  width: 160px;
 }
