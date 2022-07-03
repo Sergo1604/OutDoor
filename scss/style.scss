@@ -7,7 +7,7 @@
     $hColor: #e6b939;
     $catColor: #222222;
     //ширина bodу
-    $widthBody: 1440px;
+    $widthBody: 90%;
     $widthContainer: 83%;
     @mixin flexRaws() {
         display: flex;
@@ -615,7 +615,7 @@
                         position: relative;
                     }
                     .input {
-                        width: 460px;
+                        width: 39%;
                         border-radius: 8px;
                         border: none;
                         display: block;

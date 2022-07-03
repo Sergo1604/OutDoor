@@ -86,7 +86,7 @@ select {
 }
 
 body {
-  max-width: 1440px;
+  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
   color: #575445;
@@ -653,7 +653,7 @@ body {
   position: relative;
 }
 .footer .container .wrapperRaws .letter .input {
-  width: 460px;
+  width: 39%;
   border-radius: 8px;
   border: none;
   display: block;
