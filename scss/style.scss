@@ -619,17 +619,18 @@
                         border-radius: 8px;
                         border: none;
                         display: block;
-                        padding: 18px 0px 9px;
+                        padding: 18px;
                     }
                     .btn {
                         padding: 10px;
                         border-radius: 10px;
-                        border: none;
+                        border-width: 0px;
                         position: absolute;
-                        bottom: 0px;
-                        right: 0px;
+                        bottom: 5px;
+                        right: 5px;
                         color: $secColor;
                         background-color: $mainColor;
+                        font-family: 'Poppins', sans-serif;
                     }
                 }
             }

@@ -657,17 +657,18 @@ body {
   border-radius: 8px;
   border: none;
   display: block;
-  padding: 18px 0px 9px;
+  padding: 18px;
 }
 .footer .container .wrapperRaws .letter .btn {
   padding: 10px;
   border-radius: 10px;
-  border: none;
+  border-width: 0px;
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 5px;
+  right: 5px;
   color: #fff;
   background-color: #575445;
+  font-family: "Poppins", sans-serif;
 }
 .footer .container .wrapper-left {
   padding-top: 30px;
