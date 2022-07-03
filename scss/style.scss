@@ -94,7 +94,7 @@
     }
     
     .hero {
-        background: url(../img/header/hero/IMAGE.png);
+        background: url(../img/header/hero/IMAGE.png) no-repeat;
         padding: 210px 0px;
         .block {
             padding-left: 16px;
@@ -245,7 +245,7 @@
     @mixin setBcgrColor() {
         @for $i from 1 through 6 {
             .item#{$i} {
-                background-image: url(../img/main/store/IMAGE#{$i}.png);
+                background: url(../img/main/store/IMAGE#{$i}.png) no-repeat;
             }
         }
     }
@@ -334,7 +334,7 @@
     }
     
     .sea-bkgr {
-        background: url(../img/main/shops/IMAGEsea.png);
+        background: url(../img/main/shops/IMAGEsea.png) no-repeat;
         padding: 510px 35px 35px 750px;
         .wrapperRaws {
             background: #292C32;
@@ -362,7 +362,7 @@
     }
     
     .stains-bkgr {
-        background: #375C58 url(../img/main/shops/Combined-Shape.png);
+        background: #375C58 url(../img/main/shops/Combined-Shape.png) no-repeat;
         padding: 100px 0;
         .block {
             width: 540px;
