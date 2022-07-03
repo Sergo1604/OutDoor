@@ -129,7 +129,7 @@ body {
 }
 
 .hero {
-  background: url(../img/header/hero/IMAGE.png);
+  background: url(../img/header/hero/IMAGE.png) no-repeat;
   padding: 210px 0px;
 }
 .hero .block {
@@ -276,27 +276,27 @@ body {
 }
 
 .item1 {
-  background-image: url(../img/main/store/IMAGE1.png);
+  background: url(../img/main/store/IMAGE1.png) no-repeat;
 }
 
 .item2 {
-  background-image: url(../img/main/store/IMAGE2.png);
+  background: url(../img/main/store/IMAGE2.png) no-repeat;
 }
 
 .item3 {
-  background-image: url(../img/main/store/IMAGE3.png);
+  background: url(../img/main/store/IMAGE3.png) no-repeat;
 }
 
 .item4 {
-  background-image: url(../img/main/store/IMAGE4.png);
+  background: url(../img/main/store/IMAGE4.png) no-repeat;
 }
 
 .item5 {
-  background-image: url(../img/main/store/IMAGE5.png);
+  background: url(../img/main/store/IMAGE5.png) no-repeat;
 }
 
 .item6 {
-  background-image: url(../img/main/store/IMAGE6.png);
+  background: url(../img/main/store/IMAGE6.png) no-repeat;
 }
 
 .store {
@@ -380,7 +380,7 @@ body {
 }
 
 .sea-bkgr {
-  background: url(../img/main/shops/IMAGEsea.png);
+  background: url(../img/main/shops/IMAGEsea.png) no-repeat;
   padding: 510px 35px 35px 750px;
 }
 .sea-bkgr .wrapperRaws {
@@ -407,7 +407,7 @@ body {
 }
 
 .stains-bkgr {
-  background: #375C58 url(../img/main/shops/Combined-Shape.png);
+  background: #375C58 url(../img/main/shops/Combined-Shape.png) no-repeat;
   padding: 100px 0;
 }
 .stains-bkgr .block {
