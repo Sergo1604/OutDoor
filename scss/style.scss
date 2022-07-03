@@ -8,7 +8,7 @@
     $catColor: #222222;
     //ширина bodу
     $widthBody: 1440px;
-    $widthContainer: 1200px;
+    $widthContainer: 83%;
     @mixin flexRaws() {
         display: flex;
         justify-content: space-between;
