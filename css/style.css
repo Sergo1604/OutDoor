@@ -390,6 +390,7 @@ body {
   justify-content: space-evenly;
   padding-top: 15px;
   padding-bottom: 15px;
+  right: 0px;
 }
 .sea-bkgr .wrapperRaws .link {
   font-family: "Poppins", sans-serif;
